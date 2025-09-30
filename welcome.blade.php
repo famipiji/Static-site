@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fahmi Rosmidi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="icon" type="image/png" href="{{ asset('images/fr.png') }}">
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32"> 
+  <h1><b>DIGITAL PORTFOLIO</b></h1>
+  <p>FAHMI ROSMIDI<span class="w3-tag"></span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="{{ asset('images/fyp.png') }}" alt="fyp" style="width:100%">
+    <div class="w3-container">
+      <h3><b>FYP Project</b></h3>
+      <h5>IoT Enabled Smart Street Lighting System for Energy Efficient Smart Cities, <span class="w3-opacity">2025</span></h5>
+    </div>
+
+<div class="w3-container">
+  
+
+  <!-- Scrollable section -->
+  <div id="more" class="hidden-text">
+    <div class="scroll-box">
+      <p>
+      My project focuses on developing an IoT-enabled smart street lighting system aimed at enhancing energy efficiency in smart cities. 
+      The system utilizes advanced sensors and data analytics to optimize lighting based on real-time conditions, significantly reducing energy consumption and operational costs.
+      This innovative approach not only improves the sustainability of urban environments but also enhances the quality of life for residents. 
+      This project also aims to integrate renewable energy sources, such as solar panels, to further reduce the carbon footprint of street lighting. 
+      In this project, I was awarded <b>Bronze Medal</b> at UTeM’s Inovation & Technology Competition, INOTEK Series II (Final Year Project - Category), June 2025.
+      </p>
+      <img src="{{ asset('images/results.png') }}" alt="fyp" style="width:100%">
+      <br><br>
+      <img src="{{ asset('images/results1.png') }}" alt="fyp" style="width:100%">
+      <br><br>
+      <img src="{{ asset('images/results2.png') }}" alt="fyp" style="width:100%">
+      <br><br>
+      <p>
+        The purpose of this project is to create a more intelligent and responsive street lighting system that can adapt to changing environmental conditions and user needs.
+        By leveraging IoT technology, the system can provide optimal lighting levels while minimizing energy waste, contributing to the overall goal of creating smarter, more sustainable cities.
+      </p>
+      <p>
+        Results from the project indicate a significant reduction in energy consumption, with the smart system achieving up to 60% savings compared to traditional street lighting methods.
+      </p>
+      <img src="{{ asset('images/results3.png') }}" alt="fyp" style="width:100%">
+      <br><br>
+      <img src="{{ asset('images/results4.png') }}" alt="fyp" style="width:100%">
+      <br><br>
+      <img src="{{ asset('images/results5.png') }}" alt="fyp" style="width:100%">
+      <br><br>
+      <p>
+        The project also integrated with fault detection mechanisms, allowing for proactive maintenance and reducing downtime.
+        Overall, the IoT-enabled smart street lighting system presents a viable solution for cities looking to enhance their infrastructure while promoting sustainability and energy efficiency.
+      </p>
+        In this project, fault detection system by using telegram bot is implemented to notify the authority if there is any fault occur in the street light system.
+        This will help the authority to take immediate action to fix the fault and ensure the street light system is always operational.
+      </p>
+      <b>Key Features of the Project:</b>
+      <ul>
+        <li>IoT Integration: Utilizes IoT technology for real-time monitoring and control of street lights.</li>
+        <li>Energy Efficiency: Implements adaptive lighting strategies to minimize energy consumption.</li>
+        <li>Renewable Energy: Incorporates solar panels to power the street lighting system.</li>
+        <li>Data Analytics: Uses data analytics to optimize lighting patterns based on environmental conditions and user behavior.</li>
+        <li>Cost Savings: Reduces operational costs through efficient energy use and maintenance.</li>
+        <li>Environmental Impact: Contributes to reducing the carbon footprint of urban lighting systems.</li>
+        <li>Fault Detection: Integrates a fault detection system using Telegram bot to notify authorities
+          of any issues in the street light system for prompt maintenance.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-col m8 s12">
+      <p>
+        <button class="w3-button w3-padding-large w3-white w3-border" id="readMoreBtn">
+          <b>READ MORE?</b>
+        </button>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- CSS -->
+<style>
+  .hidden-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+  }
+  .hidden-text.show {
+    max-height: 600px; /* height of the scrollable box */
+  }
+  .scroll-box {
+    max-height: 600px;   /* set visible height */
+    overflow-y: auto;    /* enable vertical scrolling */
+    padding-right: 10px; /* space for scrollbar */
+  }
+  .scroll-box::-webkit-scrollbar {
+    width: 8px;
+  }
+  .scroll-box::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  .scroll-box::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+</style>
+
+<!-- JS -->
+<script>
+  const btn = document.getElementById("readMoreBtn");
+  const moreText = document.getElementById("more");
+
+  btn.addEventListener("click", function() {
+    if (moreText.classList.contains("show")) {
+      moreText.classList.remove("show");
+      btn.innerHTML = "<b>READ MORE?</b>";
+    } else {
+      moreText.classList.add("show");
+      btn.innerHTML = "<b>SHOW LESS</b>";
+    }
+  });
+</script>
+
+
+
+  </div>
+  <!-- END BLOG ENTRY -->
+  <hr>
+
+
+  
+  <!-- Blog entry -->
+<div class="w3-card-4 w3-margin w3-white">
+  <img src="{{ asset('images/prototype.png') }}" alt="Prototype" style="width:100%">
+  
+  <div class="w3-container">
+    <h3><b>IDP PROJECT</b></h3>
+    <h5>Jungle Jams Tram, Enriching Zoo Encounter Through RFID Audio, 
+        <span class="w3-opacity">2024</span>
+    </h5>
+  </div>
+
+  <div class="w3-container">
+    <!-- Preview text -->
+
+    <!-- Hidden expandable section -->
+    <div id="more2" class="hidden-text">
+      <div class="scroll-box">
+        <!-- ✨ Extra content here -->
+         <p>
+          Jungle Jams Tram integrates:
+        <ul>
+          <li>RFID RC522 module</li>
+          <li>DFPlayer Mini MP3 module</li>
+          <li>Arduino Uno R3</li>
+          <li>8Ω 3W speaker</li>
+        </ul>
+        </p>
+         <p>
+          Objectives:
+        <ul>
+          <li>Develop an automated RFID-triggered audio system</li>
+          <li>Enhance visitor learning and enjoyment</li>
+          <li>Promote wildlife conservation education</li>
+        </ul>
+        </p>
+        <p>
+          Problem Statement:
+        <ul>
+          <li>Limited visitor interaction</li>
+          <li>Information overload on signage</li>
+          <li>Underutilized technology</li>
+        </ul>
+        </p>
+        <p>
+          This project focuses on developing an innovative audio guide system for zoo visitors using RFID technology. 
+          The system aims to enhance the visitor experience by providing informative and engaging audio content about the animals and exhibits as they explore the zoo.
+        </p>
+        <p>
+          The audio guide system utilizes RFID tags placed at various exhibits throughout the zoo. 
+          Each jungle tram is provided with RFID-enabled devices that automatically play relevant audio content when they approach an exhibit. 
+          This hands-free experience allows visitors to learn about the animals and their habitats without needing to read signs or use their phones.
+        </p>
+        <br><br>
+        <img src="{{ asset('images/circuit.png') }}" alt="Prototype" style="width:100%">
+        <br><br>
+        <p>
+          Key Features:
+        <ul>
+          <li>Real-time RFID card scanning.</li>
+          <li>Location-based audio playback.</li>
+          <li>Curated educational content.</li>
+          <li>Scalable for more tram stops/exhibits.</li>
+        </ul>
+        </p>
+        <p>
+          Benefits:
+        <ul>
+          <li>Enhanced visitor engagement.</li>
+          <li>Improved learning experience.</li>
+          <li>Hands-free and convenient.</li>
+          <li>Supports conservation education.</li>
+        </ul>
+        </p>
+        <p>
+          Overall, the Jungle Jams Tram project aims to create a more interactive and educational experience for
+          zoo visitors, leveraging RFID technology to deliver timely and relevant audio content about the animals and exhibits they encounter.
+        </p>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="w3-row">
+      <div class="w3-col m8 s12">
+        <p>
+          <button class="w3-button w3-padding-large w3-white w3-border" id="readMoreBtn2">
+            <b>READ MORE?</b>
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS (reuse same styles if already added) -->
+<style>
+  .hidden-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+  }
+  .hidden-text.show {
+    max-height: 600px; /* expanded height */
+  }
+  .scroll-box {
+    max-height: 600px;   /* visible height */
+    overflow-y: auto;    /* scrolling enabled */
+    padding-right: 10px;
+  }
+  .scroll-box::-webkit-scrollbar {
+    width: 8px;
+  }
+  .scroll-box::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  .scroll-box::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+</style>
+
+<!-- JS -->
+<script>
+  const btn2 = document.getElementById("readMoreBtn2");
+  const moreText2 = document.getElementById("more2");
+
+  btn2.addEventListener("click", function() {
+    if (moreText2.classList.contains("show")) {
+      moreText2.classList.remove("show");
+      btn2.innerHTML = "<b>READ MORE »</b>";
+    } else {
+      moreText2.classList.add("show");
+      btn2.innerHTML = "<b>SHOW LESS</b>";
+      // Smooth scroll into view when expanded
+      moreText2.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
+</script>
+
+<!-- END BLOG ENTRIES -->
+</div>
+
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="{{ asset('images/dp.jpg') }}" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>My Name</b></h4>
+      <p>Hi! My name is Muhammad Fahmi Hafizi bin Rosmidi. I'm a fresh graduate with a degree in Computer Engineering. I'm passionate about technology and its potential to improve lives. 
+        I really love coding and exploring new technologies. I'm always eager to learn and take on new challenges.</p>
+    </div>
+  </div><hr>
+  <div class="w3-card w3-margin">
+  <div class="w3-container w3-padding">
+
+  <!--Experience-->
+    <h4>Experience</h4>
+  </div>
+  <ul class="w3-ul w3-hoverable w3-white">
+
+   <ul class="w3-ul w3-hoverable w3-white">
+
+  <!-- Raffcomm -->
+  <li class="w3-padding-16 job-item" style="cursor: pointer;">
+    <img src="{{ asset('images/raffcomm.png') }}" alt="raffcomm Logo"
+         class="w2-left w2-margin-right" style="width:100px">
+    <br>
+    <span class="w3-large">Raffcomm Sdn Bhd</span>
+    <br>
+    <span>(July, 2024 – October, 2024)</span>
+    <br>
+    <span>Internship as <b>Web Developer</b></span>
+
+    <!-- Hidden description -->
+    <div class="job-desc">
+      <br>● Developed and maintained 10+ responsive web pages using HTML, CSS, JavaScript, and Bootstrap,
+          improving user engagement time by 30%.
+      <br>
+      ● Built 3 full-stack web applications with CRUD functionalities, supporting 100+ user records and enabling realtime data updates with under 1s latency.
+      <br>
+      ● Integrated frontend and backend components for 2 major projects, resulting in a 25% improvement in system
+        response time and 100% error-free data sync.
+      <br>
+      ● Gained hands-on experience with version control tools like Git for team collaboration and source code
+      management.      
+    </div>
+  </li>
+
+  <!-- Kimyra -->
+  <li class="w3-padding-16 job-item" style="cursor: pointer;">
+    <img src="{{ asset('images/kimyra.png') }}" alt="Kimyra Logo"
+         class="w2-left w2-margin-right" style="width:50px">
+    <br>
+    <span class="w3-large">Kimyra International Sdn. Bhd</span>
+    <br>
+    <span>(September, 2019 – December, 2019)</span>
+    <br>
+    <span><b>Sales Executive</b></span>
+
+    <!-- Hidden description -->
+    <div class="job-desc">
+      <br>● Assisted 20+ customers daily by providing detailed product and service explanations, achieving a 95%
+      satisfaction rating based on post-interaction feedback.
+      <br>
+      ● Increased monthly sales revenue by 15% through targeted upselling, personalized recommendations, and
+      consistent customer engagement.
+      <br>
+      ● Resolved customer complaints and issues promptly and effectively, enhancing overall customer experience
+      and retention rates.
+    </div>
+  </li>
+
+</ul>
+
+<style>
+.job-desc {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+.job-item.active .job-desc {
+  max-height: 500px; /* increase if description is longer */
+  transition: max-height 0.5s ease-in;
+}
+</style>
+
+<script>
+document.querySelectorAll(".job-item").forEach(item => {
+  item.addEventListener("click", () => {
+    // Close all other items
+    document.querySelectorAll(".job-item").forEach(i => {
+      if (i !== item) {
+        i.classList.remove("active");
+      }
+    });
+
+    // Toggle clicked one
+    item.classList.toggle("active");
+  });
+});
+</script>
+
+  
+
+  </ul>
+</div>
+  <!-- Posts -->
+<div class="w3-card w3-margin">
+  <div class="w3-container w3-padding">
+    <h4>Skills</h4>
+  </div>
+  <ul class="w3-ul w3-hoverable w3-white">
+
+    <li class="w3-padding-16">
+      <img src="{{ asset('images/php.png') }}" alt="PHP Logo"
+           class="w3-left w3-margin-right" style="width:50px">
+      <span class="w3-large">PHP</span>
+    </li>
+
+    <li class="w3-padding-16">
+      <img src="{{ asset('images/html.png') }}" alt="HTML Logo"
+           class="w3-left w3-margin-right" style="width:40px">
+      <span class="w3-large">HTML</span>
+    </li>
+
+    <li class="w3-padding-16">
+      <img src="{{ asset('images/css.png') }}" alt="CSS Logo"
+           class="w3-left w3-margin-right" style="width:35px">
+      <span class="w3-large">CSS</span>
+    </li>
+
+    <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+      <img src="{{ asset('images/js.png') }}" alt="JavaScript Logo"
+           class="w3-left w3-margin-right" style="width:40px">
+      <span class="w3-large">JavaScript</span>
+    </li>
+
+    <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+      <img src="{{ asset('images/cp.png') }}" alt="C++ Logo"
+           class="w4-left w3-margin-right" style="width:35px">
+      <span class="w3-large">C++</span>
+    </li>
+
+    <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+      <img src="{{ asset('images/mysql.png') }}" alt="MySQL Logo"
+           class="w3-left w3-margin-right" style="width:50px">
+      <span class="w3-large">MySQL</span>
+    </li>
+
+    <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+      <img src="{{ asset('images/laravel.png') }}" alt="Laravel Logo"
+           class="w3-left w3-margin-right" style="width:40px">
+      <span class="w3-large">Laravel</span>
+    </li>
+
+  </ul>
+</div>
+
+  <hr> 
+ 
+
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+
+
+</body>
+</html>
